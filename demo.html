@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo-01</title>
+  </head>
+  <body>
+    <!-- <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid red"
+    ></canvas>
+    <script>
+      let canvas = document.getElementById("myCanvas");
+      let ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 20, 0, 2 * Math.PI);
+      ctx.stroke();
+    </script> -->
+    <!-- <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+    </script> -->
+    <!-- <canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById("DemoCanvas");
+      // tạo biến trích xuất giá trị canvas từ thẻ canvas
+      if (canvas.getContext) {
+        // giao thức
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "green"; // color of fill
+        var y = 40,
+          h = 300,
+          w = 260;
+        for (var x = 10; x != 140; x = x + 10) {
+          ctx.fillRect(x, y, h, w);
+          ctx.clearRect(x + 5, y + 5, h - 10, w - 10);
+          y = y + 10;
+          h = h - 20;
+          w = w - 20;
+        }
+      }
+    </script> -->
+    <!-- <canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById("DemoCanvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#fa4b2a"; // color of fill
+        ctx.fillRect(10, 40, 140, 160); // create rectangle
+      }
+    </script> -->
+    <canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById("DemoCanvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        ctx.lineWidth = "3";
+        ctx.strokeStyle = "red";
+        ctx.strokeRect(5, 5, 300, 250);
+        ctx.lineWidth = "25";
+        ctx.lineJoin = "bevel";
+        ctx.strokeStyle = "blue";
+        ctx.strokeRect(150, 200, 300, 150);
+        ctx.lineJoin = "round";
+        ctx.lineWidth = "45";
+        ctx.strokeStyle = "green";
+        ctx.strokeRect(250, 50, 150, 250);
+      }
+    </script>
+  </body>
+</html>
